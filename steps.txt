@@ -1,4 +1,11 @@
+# Step 1: Install libraries
 !pip install transformers datasets -q
 
+# Step 2: Import tokenizer loader
 from transformers import AutoTokenizer
-AutoTokenizer.from_pretrained(model_name)
+
+# Step 3: Choose model
+model_name = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+
+# Step 4: Load tokenizer
+tokenizer = AutoTokenizer.from_pretrained(model_name)
