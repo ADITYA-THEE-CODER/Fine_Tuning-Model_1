@@ -1,3 +1,4 @@
 !pip install transformers datasets -q
 
 from transformers import AutoTokenizer
+AutoTokenizer.from_pretrained(model_name)
