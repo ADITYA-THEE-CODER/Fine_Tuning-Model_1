@@ -4,7 +4,7 @@
 # Step 2: Import tokenizer loader
 from transformers import AutoTokenizer
 
-# Step 3: Choose the model
+# Step 3: Choose model
 model_name = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
 
 # Step 4: Load tokenizer
@@ -16,4 +16,11 @@ print(tokenizer("Hello AI"))
 # Step 6: Import model loader
 from transformers import AutoModelForCausalLM
 
+# Step 7: Load the actual AI model
 model = AutoModelForCausalLM.from_pretrained(model_name)
+
+# Step 8: Convert text into tensors
+inputs = tokenizer(
+    "What is machine learning?",
+    return_tensors="pt"
+)
