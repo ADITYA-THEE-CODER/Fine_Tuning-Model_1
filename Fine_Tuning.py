@@ -1,6 +1,3 @@
-# peft : Parameter Efficient Fine Tuning
-# trl : Transformer Reinforcement Learning
-
 # Step 1: Install required libraries
 !pip install transformers datasets peft trl accelerate -q
 
