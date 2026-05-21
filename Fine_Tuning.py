@@ -81,3 +81,9 @@ dataset = Dataset.from_list(data)
 from trl import SFTTrainer
 
 from transformers import TrainingArguments
+
+training_args = TrainingArguments(
+    output_dir="./results",
+    per_device_train_batch_size=1,
+    num_train_epochs=1,
+)
