@@ -30,3 +30,5 @@ outputs = model.generate(
     **inputs,
     max_new_tokens=30
 )
+
+print(tokenizer.decode(outputs[0]))
