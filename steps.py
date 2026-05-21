@@ -15,3 +15,5 @@ print(tokenizer("Hello AI"))
 
 # Step 6: Import model loader
 from transformers import AutoModelForCausalLM
+
+model = AutoModelForCausalLM.from_pretrained(model_name)
