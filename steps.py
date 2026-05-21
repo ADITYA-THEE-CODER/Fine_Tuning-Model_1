@@ -24,3 +24,5 @@ inputs = tokenizer(
     "What is machine learning?",
     return_tensors="pt"
 )
+
+outputs = model.generate(**inputs, max_new_tokens=30)
