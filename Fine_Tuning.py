@@ -87,3 +87,9 @@ training_args = TrainingArguments(
     per_device_train_batch_size=1,
     num_train_epochs=1,
 )
+
+trainer = SFTTrainer(
+    model=model,
+    train_dataset=dataset,
+    args=training_args,
+)
