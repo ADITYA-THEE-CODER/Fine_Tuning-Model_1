@@ -2,3 +2,5 @@
 # trl : Transformer Reinforcement Learning
 
 !pip install peft trl accelerate -q
+
+from peft import LoraConfig
