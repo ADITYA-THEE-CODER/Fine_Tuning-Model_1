@@ -80,3 +80,5 @@ data = [
 
 # Step 16: Convert list into Dataset object
 dataset = Dataset.from_list(data)
+
+from trl import SFTTrainer
