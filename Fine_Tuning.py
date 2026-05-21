@@ -79,3 +79,5 @@ data = [
 dataset = Dataset.from_list(data)
 
 from trl import SFTTrainer
+
+from transformers import TrainingArguments
