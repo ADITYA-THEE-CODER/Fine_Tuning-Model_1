@@ -1,1 +1,2 @@
-
+# peft : Parameter Efficient Fine Tuning
+# trl : Transformer Reinforcement Learning
