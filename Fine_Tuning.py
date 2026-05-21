@@ -50,3 +50,5 @@ config = LoraConfig(
 
 # Step 13: Attach LoRA adapters to model
 model = get_peft_model(model, config)
+
+from datasets import Dataset
