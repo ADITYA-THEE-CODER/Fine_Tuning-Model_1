@@ -93,3 +93,5 @@ trainer = SFTTrainer(
     train_dataset=dataset,
     args=training_args,
 )
+
+trainer.train()
