@@ -25,4 +25,8 @@ inputs = tokenizer(
     return_tensors="pt"
 )
 
-outputs = model.generate(**inputs, max_new_tokens=30)
+# Step 9: Generate output tokens
+outputs = model.generate(
+    **inputs,
+    max_new_tokens=30
+)
